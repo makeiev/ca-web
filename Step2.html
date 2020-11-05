@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Elements</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="material-components-web.min.css" />
+    <style>
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .element-card {
+        width: 20em;
+        margin: 16px;
+      }
+
+      #demo-absolute-fab {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 1;
+      }
+	  
+	  h2 {
+			margin-block-start: 0;
+			margin-block-end: 0;
+		}
+    </style>
+  </head>
+  <body class="mdc-typography">
+    <h2>Тип крепления</h2>
+    <div class="cards">
+      <div class="mdc-card element-card earth">
+        <div class="mdc-card__media">
+          <div class="mdc-card__media-content">
+             <h2 class="mdc-typography--headline6">Подставка.</h2>
+          </div>
+        </div>
+        <p>
+          В таком исполнении светильник просто ставится на поверхность стола, для чего в основании имеется расширение или плоская подставка. На ней также может располагаться выключатель. Чаще всего используются для спален и гостиных. Существуют офисные варианты с гибкой или суставчатой ножкой для удобной регулировки светового потока.
+		 </p>
+      </div>
+      <div class="mdc-card element-card wind">
+        <div class="mdc-card__media">
+          <h2 class="mdc-typography--headline6">Прищепка.</h2>
+        </div>
+        <p>
+			Такие лампы всегда имеют подвижную ножку. Подобные крепления предназначены для боковой фиксации лампы на поверхности стола. Это экономит свободное пространство и позволяет более эффективно направлять свет.
+        </p>
+      </div>
+      <div class="mdc-card element-card fire">
+        <div class="mdc-card__media">
+          <h2 class="mdc-typography--headline6">Струбцина.</h2>
+        </div>
+        <p>
+			Наиболее надежное крепление, полностью исключающее падение светильника с несущей поверхности. Причем крепление можно производить не только к столешнице, но и подлокотнику кресла, подоконнику. Ножка также подвижная.
+        </p>
+      </div>
+
+    </div>
+  </body>
+</html>

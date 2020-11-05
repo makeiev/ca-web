@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Elements</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="material-components-web.min.css" />
+    <style>
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .element-card {
+        width: 20em;
+        margin: 16px;
+      }
+
+      #demo-absolute-fab {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 1;
+      }
+	  
+	  h2 {
+			margin-block-start: 0;
+			margin-block-end: 0;
+		}
+    </style>
+  </head>
+  <body class="mdc-typography">
+    <h2>Тип ножки</h2>
+    <div class="cards">
+      <div class="mdc-card element-card earth">
+        <div class="mdc-card__media">
+          <div class="mdc-card__media-content">
+             <h2 class="mdc-typography--headline6">Гибкий тип.</h2>
+          </div>
+        </div>
+        <p>
+          Настольная лампа на гибкой ножке позволяет сделать качественное освещение всей поверхности стола. Изменить положение плафона, выбрать наиболее подходящий угол наклона и направить световой поток можно одной рукой.</p>
+      </div>
+      <div class="mdc-card element-card wind">
+        <div class="mdc-card__media">
+          <h2 class="mdc-typography--headline6">Составной тип.</h2>
+        </div>
+        <p>
+			Складные светильники легкие, компактные и удобные. Некоторые их них имеют длинную телескопическую ножку и больше подходят для стационарной установки. Такие светильники можно протянуть с одного края стола на другой. Благодаря наличию шарниров, лампам можно придавать необходимый угол наклона для лучшего освещения выбранного места на столе или в доме.
+        </p>
+      </div>
+
+    </div>
+  </body>
+</html>
