@@ -3,12 +3,12 @@
 <title>AR Test</title>
 </head>
 <body>
-<a href="intent://arvr.google.com/scene-viewer/1.0?file=https://drive.google.com/u/0/uc?id=1FdYG0HwfknVrPVyf0YkIuZnJia8CpNu4&export=download?usp=sharing&mode=ar_only#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;" style="font-size:24">
+<a href="intent://arvr.google.com/scene-viewer/1.0?file=http://35.159.21.168/glb/fischer.glb?usp=sharing&mode=ar_only#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;" style="font-size:24">
 	Show Me Fischer AR on Android
 	</a>
     
 	
-	<a rel="ar" href="https://drive.google.com/u/0/uc?id=13O48SiaDxEHrQq_vaeDuLW8IfXMnObfN&export=download">
+	<a rel="ar" href="http://35.159.21.168/usdz/fischer.usdz">
         Show Me Fischer AR on iOS
     </a>
 	
@@ -16,7 +16,16 @@
 	<!-- Import the component -->
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-<!-- Use it like any other HTML element -->
-<model-viewer src="https://drive.google.com/u/0/uc?id=1FdYG0HwfknVrPVyf0YkIuZnJia8CpNu4&export=download" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
+<!-- Use it like any other HTML element https://modelviewer.dev/shared-assets/models/Astronaut.glb  -->
+<model-viewer src="http://35.159.21.168/glb/fischer.glb" ios-src="http://35.159.21.168/usdz/fischer.usdz" camera-controls>
+
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+</model-viewer>
+
 </body>
 </html>
