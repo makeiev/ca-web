@@ -1,6 +1,17 @@
 <html>
 <head>
 <title> Defy 210</title>
+<style>
+#ar-button {
+	display: block;
+	margin: 0 auto;
+	border: 0;
+	height: 100px; 
+	background-size: 100% 100%; 
+	width: 400px; 
+	background-image: url(https://developers.google.com/static/ar/develop/java/images/sv-view-in-3D.jpg);
+}
+</style>
 <!-- Import the component -->
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
 </head>
@@ -9,8 +20,10 @@
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
     </div>
-    <button slot="ar-button" id="ar-button" style="border: 0;height: 100px; background-size: 100% 100%; width: 400px; background-image: url(https://developers.google.com/static/ar/develop/java/images/sv-view-in-3D.jpg);">
+	<div>
+    <button slot="ar-button" id="ar-button" style="">
     </button>
+	</div>
 </model-viewer>
 
 </body>
